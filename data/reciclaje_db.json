@@ -1,0 +1,168 @@
+{
+  "usuarios": [
+    {
+      "idUsuario": "usr-admin-01",
+      "correo": "admin@reciclaje.com",
+      "contrasena": "$2b$10$e9Jdd/AWYsg76C8Wy0PTYe1KVZCkNqmdkirYvisg4iuIuToRaEJwW",
+      "rol": "ADMINISTRADOR",
+      "fechaCreacion": "2026-01-01T08:00:00.000Z"
+    },
+    {
+      "idUsuario": "usr-rec-01",
+      "correo": "carlos@reciclaje.com",
+      "contrasena": "$2b$10$e9Jdd/AWYsg76C8Wy0PTYeLXv0SKIAA5fpZrZIrJqipVZyi2Sj6ni",
+      "rol": "RECICLADOR",
+      "fechaCreacion": "2026-01-10T09:00:00.000Z"
+    },
+    {
+      "idUsuario": "usr-rec-02",
+      "correo": "maria@reciclaje.com",
+      "contrasena": "$2b$10$e9Jdd/AWYsg76C8Wy0PTYeLXv0SKIAA5fpZrZIrJqipVZyi2Sj6ni",
+      "rol": "RECICLADOR",
+      "fechaCreacion": "2026-01-15T10:30:00.000Z"
+    }
+  ],
+  "administradores": [
+    {
+      "idAdministrador": "adm-01",
+      "nombre": "Administrador Principal (EcoGestión)",
+      "idUsuario": "usr-admin-01"
+    }
+  ],
+  "recicladores": [
+    {
+      "idReciclador": "rec-01",
+      "nombre": "Carlos Mendoza",
+      "idUsuario": "usr-rec-01",
+      "idAdministrador": "adm-01"
+    },
+    {
+      "idReciclador": "rec-02",
+      "nombre": "María Elena Salazar",
+      "idUsuario": "usr-rec-02",
+      "idAdministrador": "adm-01"
+    }
+  ],
+  "empresas": [
+    {
+      "idEmpresa": "emp-01",
+      "nombre": "Industrias Sostenibles S.A.",
+      "direccion": "Av. Industrial 450, Zona Norte",
+      "contacto": "Ing. Roberto Pérez (+51 987 654 321)"
+    },
+    {
+      "idEmpresa": "emp-02",
+      "nombre": "Plásticos del Valle Ltda.",
+      "direccion": "Parque Tecnológico Manzana B Lote 12",
+      "contacto": "Lic. Claudia Ramírez (+51 912 345 678)"
+    },
+    {
+      "idEmpresa": "emp-03",
+      "nombre": "Corporación BioEnvases",
+      "direccion": "Calle Los Sauces 88, Edificio Central",
+      "contacto": "Arq. Jorge Torres (+51 998 712 345)"
+    },
+    {
+      "idEmpresa": "emp-04",
+      "nombre": "Centro Logístico Verde SAC",
+      "direccion": "Carretera Central Km 18.5",
+      "contacto": "Dra. Patricia Silva (+51 955 443 322)"
+    }
+  ],
+  "materiales": [
+    {
+      "idMaterial": "mat-01",
+      "nombre_material": "Plástico PET",
+      "porcentaje_meta": 40
+    },
+    {
+      "idMaterial": "mat-02",
+      "nombre_material": "Cartón y Papel",
+      "porcentaje_meta": 30
+    },
+    {
+      "idMaterial": "mat-03",
+      "nombre_material": "Vidrio Transparente",
+      "porcentaje_meta": 20
+    },
+    {
+      "idMaterial": "mat-04",
+      "nombre_material": "Aluminio y Metales",
+      "porcentaje_meta": 10
+    }
+  ],
+  "recolecciones": [
+    {
+      "idRecoleccion": "rec-reg-001",
+      "fecha": "2026-08-04",
+      "cantidad_kg": 145.5,
+      "idReciclador": "rec-01",
+      "idEmpresa": "emp-01",
+      "idMaterial": "mat-01"
+    },
+    {
+      "idRecoleccion": "rec-reg-002",
+      "fecha": "2026-08-06",
+      "cantidad_kg": 210,
+      "idReciclador": "rec-01",
+      "idEmpresa": "emp-02",
+      "idMaterial": "mat-02"
+    },
+    {
+      "idRecoleccion": "rec-reg-003",
+      "fecha": "2026-08-12",
+      "cantidad_kg": 85,
+      "idReciclador": "rec-02",
+      "idEmpresa": "emp-01",
+      "idMaterial": "mat-03"
+    },
+    {
+      "idRecoleccion": "rec-reg-004",
+      "fecha": "2026-08-18",
+      "cantidad_kg": 62.4,
+      "idReciclador": "rec-02",
+      "idEmpresa": "emp-03",
+      "idMaterial": "mat-04"
+    },
+    {
+      "idRecoleccion": "rec-reg-005",
+      "fecha": "2026-09-02",
+      "cantidad_kg": 178,
+      "idReciclador": "rec-01",
+      "idEmpresa": "emp-01",
+      "idMaterial": "mat-01"
+    },
+    {
+      "idRecoleccion": "rec-reg-006",
+      "fecha": "2026-09-05",
+      "cantidad_kg": 320.5,
+      "idReciclador": "rec-02",
+      "idEmpresa": "emp-02",
+      "idMaterial": "mat-02"
+    },
+    {
+      "idRecoleccion": "rec-reg-007",
+      "fecha": "2026-09-11",
+      "cantidad_kg": 95,
+      "idReciclador": "rec-01",
+      "idEmpresa": "emp-03",
+      "idMaterial": "mat-04"
+    },
+    {
+      "idRecoleccion": "rec-reg-008",
+      "fecha": "2026-09-18",
+      "cantidad_kg": 112.8,
+      "idReciclador": "rec-02",
+      "idEmpresa": "emp-04",
+      "idMaterial": "mat-03"
+    },
+    {
+      "idRecoleccion": "rec-reg-009",
+      "fecha": "2026-09-22",
+      "cantidad_kg": 245,
+      "idReciclador": "rec-01",
+      "idEmpresa": "emp-02",
+      "idMaterial": "mat-01"
+    }
+  ]
+}
